@@ -1,4 +1,4 @@
-# Linux-
+# Ubuntu-
 1、删除软件
 
 方法一、如果你知道要删除软件的具体名称，可以使用               
@@ -21,3 +21,13 @@ uname  -r
 
 4.列出所有内核
 dpkg --get-selections | grep linux
+# Archlinux
+1、使用Goagent代理全局在配置文件中加入
+export http_proxy=http://127.0.0.1:8087/
+export https_proxy=$http_proxy
+export HTTP_PROXY=$http_proxy
+export HTTPS_PROXY=$HTTP_PROXY
+2、fcitx无法使用
+ export GTK_IM_MODULE=fcitx
+ export QT_IM_MODULE=fcitx
+ export XMODIFIERS="@im=fcitx"

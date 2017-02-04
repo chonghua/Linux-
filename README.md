@@ -27,7 +27,11 @@ export http_proxy=http://127.0.0.1:8087/
 export https_proxy=$http_proxy
 export HTTP_PROXY=$http_proxy
 export HTTPS_PROXY=$HTTP_PROXY
+
 2、fcitx无法使用
  export GTK_IM_MODULE=fcitx
  export QT_IM_MODULE=fcitx
  export XMODIFIERS="@im=fcitx"
+ 
+ 3、一个或多个pgp签名无法验证
+ gpg --recv-keys xxxxxxxx

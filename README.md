@@ -34,8 +34,7 @@ Archlinux
  
  export HTTPS_PROXY=$HTTP_PROXY
 
- 2. fcitx无法使用
-
+ 2. fcitx无法使用，在.xinitrc和.xprofile加入
  export GTK_IM_MODULE=fcitx
  
  export QT_IM_MODULE=fcitx

@@ -45,3 +45,9 @@ Archlinux
  3. 一个或多个pgp签名无法验证
 
  gpg --recv-keys xxxxxxxx
+ 
+ 自动挂载
+ 编辑/usr/share/polkit-1/actions/org.freedesktop.udisks2.policy
+把与id="org.freedesktop.udisks2.filesystem-mount-system"对应的
+<allow_active>auth_admin_keep</allow_active>改为
+<allow_active>yes</allow_active>

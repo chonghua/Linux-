@@ -21,6 +21,8 @@ uname  -r
 
 4.列出所有内核
 dpkg --get-selections | grep linux
+
+
 Archlinux
 ---------
 
@@ -53,11 +55,9 @@ Archlinux
 <allow_active>yes</allow_active>
 
 
-grub 修复
-grub>root
-//看看所在boot分区，可能返回 hd(0,1),那么你台式机一般是/dev/hda1,笔记本一般是/dev/sda1, 现在假设是sda1
-grub>linux /boot/vmlinuz(按tab键自动补全) /dev/sda1
-//补全后好象是vmlinuz-2.6.**-**-generic记不清楚了
-grub>initrd /boot/initrd(tab键自动补全)
-grub>boot 启动
-进入ubuntu，终端输入 update-grub2
+grub修复
+1.grub>root   //看看所在boot分区，可能返回 hd(0,1),那么你台式机一般是/dev/hda1,笔记本一般是/dev/sda1, 现在假设是sda1
+2.grub>linux /boot/vmlinuz(按tab键自动补全) /dev/sda1   //补全后好象是vmlinuz-2.6.**-**-generic记不清楚了
+3.grub>initrd /boot/initrd(tab键自动补全)
+4.grub>boot 启动
+5.进入ubuntu，终端输入 update-grub2

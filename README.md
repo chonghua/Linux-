@@ -65,8 +65,8 @@ Archlinux
 
    //补全后好象是vmlinuz-2.6.**-**-generic记不清楚了
 
- 3. 3.grub>initrd /boot/initrd(tab键自动补全)
+ 3. grub>initrd /boot/initrd(tab键自动补全)
 
- 4. 4.grub>boot 启动
+ 4. grub>boot 启动
 
- 5. 5.进入ubuntu，终端输入 update-grub2
+ 5. 进入ubuntu，终端输入 update-grub2

@@ -75,7 +75,7 @@ Archlinux
 
  5. 进入ubuntu，终端输入 update-grub2
  
- **livecd修复grub
+ **livecd修复grub**
  
 1.首先挂载根目录
 

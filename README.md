@@ -22,6 +22,10 @@ uname  -r
 4.列出所有内核
 dpkg --get-selections | grep linux
 
+5.新立得恢复搜索栏
+sudo apt-get install apt-xapian-index
+sudo update-apt-xapian-index
+
 
 Archlinux
 ---------
@@ -70,3 +74,27 @@ Archlinux
  4. grub>boot 启动
 
  5. 进入ubuntu，终端输入 update-grub2
+ 
+ **livecd修复grub
+ 
+1.首先挂载根目录
+
+sudo su
+mount /dev/sdb1 /mnt
+
+2.接下来将一些需要的目录“绑定到” live CD的系统上去
+
+mount --bind /dev /mnt/dev
+mount --bind /proc /mnt/proc
+mount --bind /sys /mnt/sys
+
+3.最后切换root根目录到/mnt
+
+chroot /mnt
+
+4.这样我们就切换回我们原来的系统上了， 执行update-grub来更新引导
+
+sudo update-grub
+
+不出意外的话重启就能进入系统了 ， 整个过程如下图
+ 
